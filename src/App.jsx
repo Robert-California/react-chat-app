@@ -3,6 +3,7 @@ import { useState, useRef } from 'react'
 import './App.css'
 import { Auth } from './components/Auth'
 import Cookies from "universal-cookie";
+import { Chat } from './components/Chat';
 function App() {
   const cookies = new Cookies();
 
@@ -19,7 +20,7 @@ function App() {
     );
   }
   return <div>
-    {room ? <div>Chat</div> : 
+    {room ? <Chat/> : 
   <div>
     <label>Enter room name</label>
     <input ref={roomInputRef}></input>
