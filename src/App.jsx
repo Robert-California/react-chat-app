@@ -20,7 +20,7 @@ function App() {
     );
   }
   return <div>
-    {room ? <Chat/> : 
+    {room ? <Chat room={room}/> : 
   <div>
     <label>Enter room name</label>
     <input ref={roomInputRef}></input>
